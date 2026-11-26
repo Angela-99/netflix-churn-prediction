@@ -1,0 +1,82 @@
+{
+  "RQ1": {
+    "watch_hours": {
+      "correlation": -0.4799155497146373,
+      "p_value": 1.827096263308565e-286,
+      "ci_lower": -0.500970854287084,
+      "ci_upper": -0.4582924878329989,
+      "effect_size": 0.4799155497146373,
+      "effect_label": "Medium",
+      "decision": "Reject H0",
+      "conclusion": "watch_hours significantly predicts churn"
+    },
+    "avg_watch_time_per_day": {
+      "correlation": -0.2729576855265151,
+      "p_value": 3.8292820451775414e-86,
+      "ci_lower": -0.2984195458860046,
+      "ci_upper": -0.247107581759453,
+      "effect_size": 0.2729576855265151,
+      "effect_label": "Small",
+      "decision": "Reject H0",
+      "conclusion": "avg_watch_time_per_day significantly predicts churn"
+    },
+    "last_login_days": {
+      "correlation": 0.47158988301135085,
+      "p_value": 2.413728585705915e-275,
+      "ci_lower": 0.4497493749132828,
+      "ci_upper": 0.4928667445469763,
+      "effect_size": 0.47158988301135085,
+      "effect_label": "Medium",
+      "decision": "Reject H0",
+      "conclusion": "last_login_days significantly predicts churn"
+    }
+  },
+  "RQ2": {
+    "subscription_type": {
+      "chi2_statistic": 133.27784242855142,
+      "p_value": 1.1457351490503293e-29,
+      "degrees_of_freedom": 2,
+      "cramers_v": 0.16326533154871026,
+      "effect_label": "Small",
+      "decision": "Reject H0",
+      "conclusion": "subscription_type significantly affects churn"
+    },
+    "payment_method": {
+      "chi2_statistic": 96.90692132741091,
+      "p_value": 4.478433118358446e-20,
+      "degrees_of_freedom": 4,
+      "cramers_v": 0.13921704014050212,
+      "effect_label": "Small",
+      "decision": "Reject H0",
+      "conclusion": "payment_method significantly affects churn"
+    }
+  },
+  "RQ3": {
+    "age": {
+      "t_statistic": 0.24851399795452375,
+      "p_value": 0.8037469537933489,
+      "cohens_d": 0.007029326900640456,
+      "effect_label": "Negligible",
+      "decision": "Fail to reject H0",
+      "conclusion": "Age does not significantly affect churn patterns",
+      "retained_mean": 43.902213279678065,
+      "churned_mean": 43.79324055666004
+    },
+    "gender": {
+      "chi2_statistic": 0.6501097136171199,
+      "p_value": 0.7224877191844741,
+      "cramers_v": 0.011402716462467353,
+      "effect_label": "Negligible",
+      "decision": "Fail to reject H0",
+      "conclusion": "gender does not significantly affect churn patterns"
+    },
+    "region": {
+      "chi2_statistic": 2.6542404393304326,
+      "p_value": 0.7531077652230413,
+      "cramers_v": 0.02304014079527481,
+      "effect_label": "Negligible",
+      "decision": "Fail to reject H0",
+      "conclusion": "region does not significantly affect churn patterns"
+    }
+  }
+}
